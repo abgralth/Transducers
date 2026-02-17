@@ -6,7 +6,8 @@ The general core of each example is based on 5 structural SQL files, their aggre
   3. The update tables associated to each tables in both the source and target schema. For a given table R we got 4 associated update tables:
      - R_INSERT
      - R_DELETE
-     - R_INSERT_JOIN  
+     - R_INSERT_JOIN
+     - R_DELETE_JOIN 
   4. The core of the architecture, the PL/pgSQL functions ensuring the propagation of the updates through the two layers of our architecture
   5. Finally, the trigger function detecting new INSERTs and DELETEs over each table and calling the previously defined functions
 
